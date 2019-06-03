@@ -1,12 +1,15 @@
-# Project Delivery process
+# Project Delivery Process
 
 From conversation to definition to release.
+
+
+
 
 ## 1. Onboarding 
 
 ### 1.9. Design and Site structure Proposal
 
-* Project Assets
+* Project Assets folder
 
 ### 1.10.  Software Development Requirements
 
@@ -24,7 +27,7 @@ From conversation to definition to release.
 - Workflow
 - Board
 
-### 2.2. Kickoff meeting/Sprint Zero
+### 2.2. Kickoff Meeting/Sprint Zero
  
 - Backlog
     - Epics
@@ -72,17 +75,18 @@ From conversation to definition to release.
 
 ### 3.2. Development Process
 
-- Staging setup
+- Staging and Develop setup
 - Install site
   - Wordpress
   - Parent Theme and Child
   - Plugin Stack and other required plugins
 - Daily Meeting
+  - Backlog grooming
   - Grab tasks
   - Set personal estimate
   - Did, Blockers, Doing
-- QA
-  - After-development guideline
+- Development and QA
+  - DevQA Workflow
 
 ### 3.4. UAT
 
@@ -96,10 +100,10 @@ From conversation to definition to release.
 ### 3.7. Sprint Retrospective
 
 - Did, Blockers
-- Metrics
+- What could have been done better
+- User Stories Review
 - Workflow Review 
-
-
+- Process Plan
 
 
 ## 4. Moving Forward
