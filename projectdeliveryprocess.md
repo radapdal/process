@@ -4,6 +4,17 @@ From conversation to definition to release.
 
 
 
+## Goals
+
+The goal of this process is to streamline the delivery of software via iterative scoping and deployment.
+
+This process is aiming to:
+- get constant feedback and reduce error by deploying small but consistent iteration
+- reduce risk of over-commitment and under-delivery by focusing the few tasks for the iteration
+- increase team productivity by sense of accomplishment on every successful release
+
+
+
 
 ## 1. Onboarding 
 
@@ -102,8 +113,7 @@ From conversation to definition to release.
 - Did, Blockers
 - What could have been done better
 - User Stories Review
-- Workflow Review 
-- Process Plan
+- Process Reviews
 
 
 ## 4. Moving Forward
