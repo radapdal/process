@@ -29,7 +29,7 @@ https://yempo-solutions.atlassian.net/plugins/servlet/project-config/SC/workflow
 
 ## 1. Sprint Meeting
 
-Before the workflow starts the whole team gets to participate in the Sprint Meeting. In this meeting, the initial requirements for this iteration is introduced, clarified, defined, and estimated.
+Before the workflow starts the whole team gets to participate in the Sprint Meeting. In this meeting, the initial requirements for this iteration is introduced, clarified, defined, and estimated. At this point, everyone will be looking at the Open issues and its order based on priority.
 
 - ask questions regarding the tasks
 - work with the team on how to define an issue
@@ -37,11 +37,15 @@ Before the workflow starts the whole team gets to participate in the Sprint Meet
 
 ### 1.1 Backlog Grooming
 
-Backlog grooming is the re-prioritization of tasks and description update, this is done by the Project Manager and communicated in the Sprint or Daily meeting.
+> **OPEN**
+
+Backlog grooming is the re-prioritization of Open issues and description update, this is done by the Project Manager and communicated in the Sprint or Daily meeting.
 
 ### 1.2 Internal Definitions
 
-Here the requirement's criteria of completion are defined.
+> **OPEN** to **DEFINITION IN PROGRESS**
+
+Here the requirement's criteria of completion are defined by the team.
 
 **UX Criteria** - are requirements that affect a user experience but does not pertain to his/her behaviour.
 
@@ -51,6 +55,11 @@ Ex. Reduce font size, change menu color, delete section
 
 Ex. Able to add item to cart from the product page, redirect to cart page
 
+
+> **DEFINITION IN PROGRESS** to **DEFINITION APPROVED**
+
+Once the definitions are completed, it is confirmed by the Project Manager. Always try to get complete approval on all definitions before starting the sprint to reduce back and forth.
+
 ### 1.3 Point Estimates
 
 Point estimates are used to represent task difficulty, not total number of hours. This is meant to provide a consensus on team members on how difficult they think the task is. After the point is finalized, the individual estimate by hour is added by the developer that intends to work on the issue.
@@ -58,14 +67,14 @@ Point estimates are used to represent task difficulty, not total number of hours
 
 
 
-## 2. Development
+## Development
 
 After the Sprint Meeting and the iteration is now ready for work, the sprint can now start on its intended start date.
 
-### 2.1. Daily Meeting
+### Daily Meeting
 
+> **DEFINITION APPROVED** to **DEV READY**
 
-
-### 2.2. DevQA Workflow
+### DevQA Workflow
 
 
