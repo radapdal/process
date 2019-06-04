@@ -47,15 +47,51 @@ Backlog grooming is the re-prioritization of Open issues and description update,
 >
 > `OPEN` -> `DEFINITION IN PROGRESS`
 
-Here the requirement's criteria of completion are defined by the team.
+Here the requirement's criteria of completion are defined by the team to the best of their ability to make it easier for testing.
 
-**UX Criteria** - are requirements that affect a user experience but does not pertain to his/her behaviour.
+### Know your Issue: Task vs Story vs Bug
 
-Ex. Reduce font size, change menu color, delete section
+Issues are primarily divided into Tasks, Stories, and Bugs
 
-**Acceptance Criteria** - are requirements that pertain to specific user behaviour and its results
+***Tasks*** 
 
-Ex. Able to add item to cart from the product page, redirected to cart page
+Issues that can affect user experience but does not pertain to his/her behavior.
+
+Tasks are further differentiated as Technical Task and Content Task.
+
+- *Technical Tasks* - issues that need no internal testing, as it is a requirement for other issues.
+
+   Ex. Setup site skeleton, create new admin user
+
+- *Content Tasks* - issues that affect user experience but does not pertain to his/her behaviour. 
+
+   These are tested via **UX Criteria**. 
+
+   Ex. Reduce font size, change menu color, delete section
+
+***Stories***
+
+Issues  that pertain to specific user behavior and its results.
+
+These are tested via **Acceptance Criteria**.
+
+Ex. As a user I want to add an item to cart So I can include it in my checkout.
+
+- able to view option to add to cart
+- redirected to cart page on click
+- able to see item in cart page and list
+
+***Bugs***
+
+Bugs are issues that are found in Production. They are either tasks or stories.
+
+These are tested using either UX Criteria or Acceptance Criteria or both, whichever is necessary.
+
+Ex. Fix product add to cart button not showing in mobile
+
+
+### Approval
+
 
 > **Definition is approved**
 >
@@ -93,12 +129,71 @@ After the Sprint Meeting, and the iteration issues are approved and ready for wo
 
 ### Daily Meeting
 
+This short standup meeting is best done if everyone is looking at the same board so it is easy to point out issues.
+
+- start by declaring issues you worked on yesterday
+- point out blocked issues and those you were not able to move
+- then grab issues you intend to work on today by assigning issues to yourself and pushing it to Dev Ready
+
 > **For development**
 >
 > `DEFINITION APPROVED` -> `DEV READY`
 
+
+Everyone will do the same until the Ready list is filled with tasks to be started by the day. In this way it is easy for the team to see who is having a hard time or if the team can do more by grabbing more issues from the backlog.
+
+Quick Tip: Keep it concise and only discuss the current position of each team member, more strategic discussions should be done outside this meeting
+
 ### DevQA Workflow
+
+
+**Dev Flow**
+
+The Ready list and Dev are now ready. Begin by simply moving an issue to Dev In Progress.
 
 > **Start development**
 >
 > `DEV READY` -> `DEV IN PROGRESS`
+
+After fulfilling the issue criteria in the target environment, push the issue to its next state.
+
+Content Task and Stories should be pushed to QA. Assign, comment, and tag the QA accordingly.
+
+> **For QA**
+>
+> `DEV IN PROGRESS` -> `QA READY`
+
+Technical Task should be pushed to Closed.
+
+> **Task is complete**
+>
+> `DEV IN PROGRESS` -> `CLOSED`
+
+If there is unfulfilled criteria due to missing requirement or a change in criteria should be requested, push the issue to Blocked, and make sure to Flag it. Assign, comment, and tag the Project Manager accordingly.
+
+> **Issue is blocked**
+>
+> `DEV IN PROGRESS` -> `BLOCKED`
+
+
+**QA Flow**
+
+When a QA or Dev is ready for testing, move the issue to QA In Progress.
+
+> **Start QA**
+>
+> `QA READY` -> `QA IN PROGRESS`
+
+Test the criteria and do exploratory testing within the borders of the issue. Note scenarios tested and corresponding results. Add screenshots for clarity. After testing move the issue to its next state.
+
+> **For acceptance**
+>
+> `QA IN PROGRESS` -> `ACCEPTANCE READY`
+
+> **Found issue in QA**
+>
+> `QA IN PROGRESS` -> `QA FAILED`
+
+> **Issue is blocked**
+>
+> `QA IN PROGRESS` -> `BLOCKED`
