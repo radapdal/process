@@ -45,6 +45,7 @@ This process is aiming to:
     - Initial tasks and stories
     - Prioritize
     - Rough estimate in points
+- Minimum Viable Product
 - Sprint roadmap proposals
 - Requirements per sprint
 - Pricing
