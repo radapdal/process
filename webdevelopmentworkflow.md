@@ -6,12 +6,12 @@ Work smarter, not harder.
 
 ## Goals
 
-The goal of this workflow is to increase productivity by letting the Agile nature of software requirements take it's course and handle it efficiently and effectively.
+The goal of this workflow is to increase productivity by letting the Agile nature of software requirements take its course and handle it efficiently and effectively.
 
 This workflow aims to:
 
-- remove guesswork and constant back-and-forth by adding a Definition phase for every task so that management, developer, and QA are on the same page
-- reduce QA issues and back-and-forth delay in communication by means of QA Demo
+- remove guesswork and constant recycling of tasks by adding a Definition phase so that management, developer, and QA are on the same page
+- reduce QA issues and back-and-forth delay in communication by means of QA Demos
 - promote discussion and eliminate miscommunication of requirements by having Daily Standup meetings and Backlog grooming
 - improve on previous and future work by means of Retrospectives and Sprint Meetings
 - provide a more accurate estimate on tasks via Points system
@@ -37,13 +37,15 @@ Before the workflow starts the whole team gets to participate in the Sprint Meet
 
 ### 1.1 Backlog Grooming
 
-> **OPEN**
+> **Open**
 
 Backlog grooming is the re-prioritization of Open issues and description update, this is done by the Project Manager and communicated in the Sprint or Daily meeting.
 
 ### 1.2 Internal Definitions
 
-> **OPEN** to **DEFINITION IN PROGRESS**
+> **Start defining**
+>
+> `OPEN` -> `DEFINITION IN PROGRESS`
 
 Here the requirement's criteria of completion are defined by the team.
 
@@ -53,28 +55,50 @@ Ex. Reduce font size, change menu color, delete section
 
 **Acceptance Criteria** - are requirements that pertain to specific user behaviour and its results
 
-Ex. Able to add item to cart from the product page, redirect to cart page
+Ex. Able to add item to cart from the product page, redirected to cart page
 
+> **Definition is approved**
+>
+> `DEFINITION IN PROGRESS` -> `DEFINITION APPROVED`
 
-> **DEFINITION IN PROGRESS** to **DEFINITION APPROVED**
-
-Once the definitions are completed, it is confirmed by the Project Manager. Always try to get complete approval on all definitions before starting the sprint to reduce back and forth.
+Once the definitions are completed, it is confirmed by the Project Manager. Always try to get complete approval on all definitions before starting the sprint to avoid recycle.
 
 ### 1.3 Point Estimates
 
-Point estimates are used to represent task difficulty, not total number of hours. This is meant to provide a consensus on team members on how difficult they think the task is. After the point is finalized, the individual estimate by hour is added by the developer that intends to work on the issue.
+Points are added to all issues for the sprint. Point estimates are used to represent task difficulty, not estimated time. This is meant to provide a consensus on team members on how difficult they think the task is and is used to measure total difficulty of the iteration. 
+
+Point system is defined by Fibonacci Sequence for increasing difficulty: **1** **2** **3** **5** **8** **E**
+
+- **1** is very easy
+- **2** is easy
+- **3** is moderate
+- **5** is hard
+- **8** is very hard
+- **E** needs breakdown
+
+Team discussion:
+
+- present your point estimate
+- discuss shortly why that is your estimate
+- use the most voted number
+
+The individual estimate by hour is added by the developer that intends to work on the issue at the daily meeting.
 
 
 
 
 ## Development
 
-After the Sprint Meeting and the iteration is now ready for work, the sprint can now start on its intended start date.
+After the Sprint Meeting, and the iteration issues are approved and ready for work, the sprint can now start on its intended start date.
 
 ### Daily Meeting
 
-> **DEFINITION APPROVED** to **DEV READY**
+> **For development**
+>
+> `DEFINITION APPROVED` -> `DEV READY`
 
 ### DevQA Workflow
 
-
+> **Start development**
+>
+> `DEV READY` -> `DEV IN PROGRESS`
