@@ -57,7 +57,7 @@ Issues are primarily divided into Tasks, Stories, and Bugs
 
 Issues that can affect user experience but does not pertain to his/her behavior.
 
-Tasks are further differentiated as Technical Task and Content Task.
+Tasks are further differentiated as Technical Task, Content Task, and Maintenance Task.
 
 - *Technical Tasks* - issues that need no internal testing, as it is a requirement for other issues.
 
@@ -65,9 +65,17 @@ Tasks are further differentiated as Technical Task and Content Task.
 
 - *Content Tasks* - issues that affect user experience but does not pertain to his/her behaviour. 
 
-   These are tested via **UX Criteria**. 
+   These are defined and tested via **UX Criteria**. 
 
    Ex. Reduce font size, change menu color, delete section
+
+- *Maintenance Tasks* - issues for the website maintenance service.
+
+   These are defined and tested by the update impact and detailed in the  site's Maintenance Log.
+  
+   Ex. Update Impact:
+   
+   - Woocommerce major update: check cart design and total calculations
 
 ***Stories***
 
@@ -144,6 +152,9 @@ Everyone will do the same until the Ready list is filled with tasks to be starte
 
 Quick Tip: Keep it concise and only discuss the current position of each team member, more strategic discussions should be done outside this meeting
 
+
+
+
 ### DevQA Workflow
 
 
@@ -155,21 +166,23 @@ The Ready list and Dev are now ready. Begin by simply moving an issue to Dev In 
 >
 > `DEV READY` -> `DEV IN PROGRESS`
 
-After fulfilling the issue criteria in the target environment, push the issue to its next state.
+There will be a lot of times wherein upon development, some criteria will not be met due to difference in systems and expectations. Definitions are not set in stone and was created to be a guide before starting work. Communicate the change to your team, if it is within relative expected outcome feel free to modify the definitions.
 
-Content Task and Stories should be pushed to QA. Assign, comment, and tag the QA accordingly.
+After fulfilling the issue requirements in the target environment, push the issue to its next state.
+
+Issues with criteria should be pushed to QA. Assign, comment, and tag the QA accordingly.
 
 > **For QA**
 >
 > `DEV IN PROGRESS` -> `QA READY`
 
-Technical Task should be pushed to Closed.
+Technical Tasks can be Closed immediately after completing.
 
 > **Task is complete**
 >
 > `DEV IN PROGRESS` -> `CLOSED`
 
-If there is unfulfilled criteria due to missing requirement or a change in criteria should be requested, push the issue to Blocked, and make sure to Flag it. Assign, comment, and tag the Project Manager accordingly.
+If there is unfulfilled criteria due to missing requirement or a major change in criteria should be requested, push the issue to Blocked, and make sure to Flag it. Assign, comment, and tag the Project Manager accordingly.
 
 > **Issue is blocked**
 >
@@ -186,14 +199,42 @@ When a QA or Dev is ready for testing, move the issue to QA In Progress.
 
 Test the criteria and do exploratory testing within the borders of the issue. Note scenarios tested and corresponding results. Add screenshots for clarity. After testing move the issue to its next state.
 
+Issues that passed all criteria will be pushed to Acceptance Ready for client UAT. Assign, comment, and tag the Project Manager.
+
 > **For acceptance**
 >
 > `QA IN PROGRESS` -> `ACCEPTANCE READY`
+
+Those that failed the criteria will be sent to QA Failed. Reassign, comment, and tag the issue developer. Schedule a QA Demo if necessary.
 
 > **Found issue in QA**
 >
 > `QA IN PROGRESS` -> `QA FAILED`
 
+If issue could not be tested due to circumstances, move it to Blocked and Flag it. Assign, comment, and tag the Project Manager accordingly.
+
 > **Issue is blocked**
 >
 > `QA IN PROGRESS` -> `BLOCKED`
+
+
+**QA Demo**
+
+If a QA Demo is deemed necessary, mostly when there are problematic results from multiple scenarios and definitions tested, communicate with the issue developer and agree upon a scheduled short meeting. Demonstrate the problems found and how it was achieved, discuss if this can be immediately addressed in parallel while meeting, or too big of an issue and be handled separately. Resolve all problems that can be resolved in this meeting and process the outstanding issues accordingly.
+
+
+**Handling missed criteria**
+
+Upon testing, there will also be times when a result is found not relative to the criteria being tested. In this case communicate the result to the issue developer, see if it is intended or not. 
+
+- If it is intended but not in the definitions, update the definition.
+- If it is not intended but within the scope of the issue, update the definition.
+- If it is not intended and is out of scope of the issue, tag the Project Manager and request for processing.
+
+Comment the resolution and proceed with the testing workflow.
+
+
+
+
+## Release 
+
