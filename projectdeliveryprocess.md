@@ -43,7 +43,7 @@ This process is aiming to:
 - Backlog
     - Epics
     - Initial tasks and stories
-    - Prioritize
+    - Prioritization
     - Rough estimate in points
 - Minimum Viable Product
 - Sprint roadmap proposals
@@ -70,7 +70,7 @@ This process is aiming to:
 ### 2.7. Board update
 
 - Update version start date and end date
-- Backlog grooming 
+- Version assigment
 
 
 
@@ -80,7 +80,7 @@ This process is aiming to:
 ### 3.1. Sprint Meeting
 
 - Backlog grooming
-- Descriptions from client request
+- Issue descriptions from client requests
 - Internal Definitions 
   - Acceptance Criteria
   - UX Criteria
@@ -93,28 +93,17 @@ This process is aiming to:
   - Parent Theme and Child
   - Plugin Stack and other required plugins
 - Daily Meeting
-  - Backlog grooming
-  - Grab tasks
-  - Set personal estimate
-  - Did, Blockers, Doing
-- Development and QA
-  - DevQA Workflow
+- DevQA Workflow
 
-### 3.4. UAT
+### 3.4. Release Process
 
 - Release notes
+- UAT
+- Sprint Retrospective
 - Additional request review
+- Production Deployment
+- JIRA Version release
 
-### 3.6. Release Process
-
-- Release Workflow
-
-### 3.7. Sprint Retrospective
-
-- Did, Blockers
-- What could have been done better
-- User Stories Review
-- Process Reviews
 
 
 ## 4. Moving Forward
