@@ -158,7 +158,7 @@ Quick Tip: Keep it concise and only discuss the current position of each team me
 ### DevQA Workflow
 
 
-**Dev Flow**
+#### Dev Flow
 
 The Ready list and Dev are now ready. Begin by simply moving an issue to Dev In Progress.
 
@@ -166,7 +166,7 @@ The Ready list and Dev are now ready. Begin by simply moving an issue to Dev In 
 >
 > `DEV READY` -> `DEV IN PROGRESS`
 
-There will be a lot of times wherein upon development, some criteria will not be met due to difference in systems and expectations. Definitions are not set in stone and was created to be a guide before starting work. Communicate the change to your team, if it is within relative expected outcome feel free to modify the definitions.
+There will be a lot of times wherein upon development, some criteria will not be met due to difference in systems and expectations. Definitions are not set in stone and was created to be a guide before starting work. Communicate the change to the Dev Lead and check if it is within expected outcome, relay to the Dev Lead and update the definition.
 
 After fulfilling the issue requirements in the target environment, push the issue to its next state.
 
@@ -189,7 +189,7 @@ If there is unfulfilled criteria due to missing requirement or a major change in
 > `DEV IN PROGRESS` -> `BLOCKED`
 
 
-**QA Flow**
+#### QA Flow
 
 When a QA or Dev is ready for testing, move the issue to QA In Progress.
 
@@ -225,16 +225,63 @@ If a QA Demo is deemed necessary, mostly when there are problematic results from
 
 **Handling missed criteria**
 
-Upon testing, there will also be times when a result is found not relative to the criteria being tested. In this case communicate the result to the issue developer, see if it is intended or not. 
+Upon testing, there will also be times when a scenario or result is pointed out that may not be intended to the issue being developed. In this case communicate the result to the issue developer, see if it is intended or not. 
 
-- If it is intended but not in the definitions, update the definition.
-- If it is not intended but within the scope of the issue, update the definition.
+- If it is intended but not in the definitions, relay to the Dev Lead and update the definition.
+- If it is not intended but within the scope of the issue, relay to the Dev Lead and update the definition.
 - If it is not intended and is out of scope of the issue, tag the Project Manager and request for processing.
 
 Comment the resolution and proceed with the testing workflow.
 
 
 
+### Additional Requests mid-Sprint and how to deal with them
+
+Most of the time scope creep will slowly seep into the sprint, either by clients constantly updating requirements or team members unknowingly adding more.
+
+To monitor and handle these, follow the guideline below.
+
+A change to the requirements will be accepted within the same sprint only if:
+
+- The change has been confirmed with the customer.
+- The change aligns well with the value proposition of a story in the sprint.
+- The change is small and can be completed before end of sprint.
+- The change has been identified at least 2-3 days before end of sprint.
+
+
+
 
 ## Release 
 
+When all sprint issues are finally moved to Acceptance Ready, it is now ready for the release process.
+
+
+
+### Release Notes
+
+The Dev Lead will collect the release notes from the Release manager in JIRA. This document briefly outlines the expected modules of the project for easier review.
+
+
+
+### UAT
+
+The system being worked on is turned over to the client along with the Release Notes for review. This can take some time and it is within the management's decision to proceed with the next sprint or not.
+
+
+
+### Sprint Retrospective
+
+This meeting is scheduled right after the UAT turnover.
+
+It tackles:
+
+- the status of the sprint
+- workflow improvement
+
+
+
+### Additional Request Review
+
+If the UAT returns with additional requests, which it almost always will, take time to review the new requirements. Note that the initial requirements at this point has already been fulfilled, and the system is already shippable.
+
+To process these requests see "Additional Requests mid-Sprint and how to deal with them".
