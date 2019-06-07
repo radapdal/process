@@ -18,7 +18,9 @@ This process is aiming to:
 
 ## 1. Onboarding 
 
-### 1.9. Design and Site structure Proposal
+### 1.1 - 1.8 Standard Onboarding
+
+### 1.9. Design and Site Structure Proposal
 
 * Project Assets folder
 
@@ -70,7 +72,7 @@ This process is aiming to:
 ### 2.7. Board update
 
 - Update version start date and end date
-- Version assigment
+- Build backlogs
 
 
 
@@ -106,4 +108,8 @@ This process is aiming to:
 
 
 
-## 4. Moving Forward
+## 4. After Release
+
+- Next Sprint
+- Offboarding
+- Transition from Sprint to Scheduled-Release 
