@@ -101,10 +101,10 @@ This process is aiming to:
 
 - Release notes
 - UAT
-- Sprint Retrospective
 - Additional request review
 - [Production Deployment](https://github.com/radapdal/process/blob/master/deploymentprocedures.md)
-- JIRA Version release
+- Verification and JIRA Release
+- Sprint Retrospective
 
 
 
