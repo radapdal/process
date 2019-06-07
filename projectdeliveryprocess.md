@@ -95,7 +95,7 @@ This process is aiming to:
   - Parent Theme and Child
   - Plugin Stack and other required plugins
 - Daily Meeting
-- DevQA Workflow
+- [Development Workflow](https://github.com/radapdal/process/blob/master/webdevelopmentworkflow.md)
 
 ### 3.4. Release Process
 
@@ -103,7 +103,7 @@ This process is aiming to:
 - UAT
 - Sprint Retrospective
 - Additional request review
-- Production Deployment
+- [Production Deployment](https://github.com/radapdal/process/blob/master/deploymentprocedures.md)
 - JIRA Version release
 
 
