@@ -10,11 +10,11 @@ The goal of this workflow is to increase productivity by letting the Agile natur
 
 This workflow aims to:
 
-- remove guesswork and constant recycling of tasks by adding a Definition phase so that management, developer, and QA are on the same page
-- reduce QA issues and back-and-forth delay in communication by means of QA Demos
-- promote discussion and eliminate miscommunication of requirements by having Daily Standup meetings and Backlog grooming
-- improve on previous and future work by means of Retrospectives and Sprint Meetings
-- provide a more accurate estimate on tasks via Points system
+- Remove guesswork, constant recycling of tasks, and instill Test-First philosophy by adding a Definition phase so that management, developer, and QA are on the same page before an issue is even started.
+- Provide a more accurate estimate on tasks via Points system.
+- Reduce QA issues and back-and-forth delay in communication by means of QA Demos.
+- Promote discussion and eliminate miscommunication of requirements by having Daily Standup meetings and Backlog grooming.
+- Improve on previous and future work by means of Sprint Retrospectives and Sprint Meetings
 
 
 
@@ -47,7 +47,7 @@ Backlog grooming is the re-prioritization of Open issues and description update,
 >
 > `OPEN` -> `DEFINITION IN PROGRESS`
 
-Here the requirement's criteria of completion are defined by the team to the best of their ability to make it easier for testing.
+Here the requirement's criteria of completion are defined by the team to the best of their ability to make it easier for development and testing.
 
 ### Know your Issue: Task vs Story vs Bug
 
@@ -241,12 +241,12 @@ Most of the time scope creep will slowly seep into the sprint, either by clients
 
 To monitor and handle these, follow the guideline below.
 
-A change to the requirements will be accepted within the same sprint only if:
+A change to the requirements will be accepted within the same sprint ONLY IF:
 
 - The change has been confirmed with the customer.
 - The change aligns well with the value proposition of a story in the sprint.
-- The change is small and can be completed before end of sprint.
-- The change has been identified at least 2-3 days before end of sprint.
+- The change is small and can be completed before sprint production release date.
+- The change has been identified at least 2-3 days before sprint production release date.
 
 
 
@@ -269,19 +269,84 @@ The system being worked on is turned over to the client along with the Release N
 
 
 
-### Sprint Retrospective
-
-This meeting is scheduled right after the UAT turnover.
-
-It tackles:
-
-- the status of the sprint
-- workflow improvement
-
-
-
-### Additional Request Review
+### Issues from UAT
 
 If the UAT returns with additional requests, which it almost always will, take time to review the new requirements. Note that the initial requirements at this point has already been fulfilled, and the system is already shippable.
 
-To process these requests see "Additional Requests mid-Sprint and how to deal with them".
+To process these, treat them as Additional Request and see "Additional Requests mid-Sprint and how to deal with them".
+
+Failed definitions by client review will be recycled back to the workflow.
+
+> **Found issue in definition**
+>
+> `ACCEPTANCE READY` -> `REOPENED`
+
+
+
+### Getting ready for Production
+
+When all is well and the sprint definitions are fully accepted by the client, it's time to get ready for deployment. 
+
+
+- Relay deployment procedure and agree on a deployment schedule with the client. 
+- Dev Lead will transition sprint issues to Awaiting Release.
+
+> **Definitions accepted**
+>
+> `ACCEPTANCE READY` -> `AWAITING RELEASE`
+
+- Update sprint due date to schedule deployment date.
+
+
+
+### Deployment
+
+See [Deployment Procedures](https://github.com/radapdal/process/blob/master/SoftwareDevelopmentWorkflow.v.3.0.jpg).
+
+
+
+### Verification and JIRA Release
+
+After successfully deploying the system to production, push sprint issues to Released to Prod.
+
+> **Deployed to Prod**
+>
+> `AWAITING RELEASE` -> `RELEASED TO PROD`
+
+At this point, a QA should be on standby to verify production deployment.
+
+
+#### Issue after Deployment
+
+If a problem is unfortunately found due to the deployment, target the source from the sprint issues then assess problem as an Additional Request (see "Additional Requests mid-Sprint and how to deal with them").
+
+Issues that are deemed to be crucial will be inserted to the sprint, Flagged, set to highest Priority, and cycled to the development workflow with urgency.
+
+When the QA confirms the successful deployment, Dev Lead will release the sprint:
+
+- In JIRA Releases, on the Sprint row, choose Edit.
+- Change sprint name to the respective Version number based on Release Versioning Guideline. Save.
+- Select the release, on the top right press Release.
+- Verify release date and click Release. This will only tag all version issues to the updated version name.
+- Manually transition version issues to Closed to close them.
+
+> **Deployed verified**
+>
+> `RELEASED TO PROD` -> `CLOSED`
+
+
+
+### Sprint Retrospective
+
+This meeting is scheduled right after a successful sprint release.
+
+It tackles:
+
+- expectations for this sprint
+- highs and lows of the team members
+- workflow improvement
+- expectations for the next sprint
+
+---
+
+Congratulations you have released a sprint! Cheers!
