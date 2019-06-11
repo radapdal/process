@@ -8,10 +8,10 @@ From conversation to definition to release.
 
 The goal of this process is to streamline the delivery of software via iterative scoping and deployment.
 
-This process is aiming to:
-- get constant feedback and reduce error by deploying small but consistent iteration
-- reduce risk of over-commitment and under-delivery by focusing the few tasks for the iteration
-- increase team productivity by sense of accomplishment on every successful release
+This process aims to:
+- Get constant feedback and reduce error by deploying small but consistent iteration.
+- Reduce risk of over-commitment and under-delivery by focusing the few tasks for the iteration.
+- Increase team productivity by sense of accomplishment on every successful release.
 
 
 
@@ -90,11 +90,11 @@ This process is aiming to:
 ### 3.2. Development Process
 
 - Staging and Develop setup
-- Install site
+- [Site Installation] (https://github.com/radapdal/process/blob/master/siteinstallationprocedures.md)
   - Wordpress
   - Parent Theme and Child
   - Plugin Stack and other required plugins
-- Daily Meeting
+- Daily Meetings
 - [Development Workflow](https://github.com/radapdal/process/blob/master/webdevelopmentworkflow.md)
 
 ### 3.4. Release Process
