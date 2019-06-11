@@ -11,10 +11,10 @@ The goal of this workflow is to increase productivity by letting the Agile natur
 This workflow aims to:
 
 - Remove guesswork, constant recycling of tasks, and instill Test-First philosophy by adding a Definition phase so that management, developer, and QA are on the same page before an issue is even started.
-- Provide a more accurate estimate on tasks via Points system.
-- Reduce QA issues and back-and-forth delay in communication by means of QA Demos.
+- Provide a more accurate estimate on issues via Points system.
+- Reduce QA failures and back-and-forth delay in communication by means of QA Demos.
 - Promote discussion and eliminate miscommunication of requirements by having Daily Standup meetings and Backlog grooming.
-- Improve on previous and future work by means of Sprint Retrospectives and Sprint Meetings
+- Improve on previous and future work by means of Sprint Meetings and Sprint Retrospectives.
 
 
 
@@ -31,9 +31,9 @@ https://yempo-solutions.atlassian.net/plugins/servlet/project-config/SC/workflow
 
 Before the workflow starts the whole team gets to participate in the Sprint Meeting. In this meeting, the initial requirements for this iteration is introduced, clarified, defined, and estimated. At this point, everyone will be looking at the Open issues and its order based on priority.
 
-- ask questions regarding the tasks
-- work with the team on how to define an issue
-- provide an honest estimate
+- Ask questions regarding the issues.
+- Work with the team on how to define.
+- Provide an honest estimate.
 
 ### 1.1 Backlog Grooming
 
@@ -71,17 +71,17 @@ Tasks are further differentiated as Technical Task, Content Task, and Maintenanc
 
 - *Maintenance Tasks* - issues for the website maintenance service.
 
-   These are defined and tested by the update impact and detailed in the  site's Maintenance Log.
+   These are defined and tested by the **Update Impact** and detailed in the  site's Maintenance Log.
   
    Ex. Update Impact:
    
-   - Woocommerce major update: check cart design and total calculations
+   - MAJOR: Woocommerce update, check cart design and total calculations
 
 ***Stories***
 
-Issues  that pertain to specific user behavior and its results.
+Issues that pertain to specific user behavior and its results.
 
-These are tested via **Acceptance Criteria**.
+These are defined and tested via **Acceptance Criteria**.
 
 Ex. As a user I want to add an item to cart So I can include it in my checkout.
 
@@ -93,7 +93,7 @@ Ex. As a user I want to add an item to cart So I can include it in my checkout.
 
 Bugs are issues that are found in Production. They are either tasks or stories.
 
-These are tested using either UX Criteria or Acceptance Criteria or both, whichever is necessary.
+These are tested using either UX Criteria or Acceptance Criteria or both, whichever is applicable.
 
 Ex. Fix product add to cart button not showing in mobile
 
@@ -122,11 +122,11 @@ Point system is defined by Fibonacci Sequence for increasing difficulty: **1** *
 
 Team discussion:
 
-- present your point estimate
-- discuss shortly why that is your estimate
-- use the most voted number
+- Present your point estimate.
+- Discuss shortly why that is your estimate.
+- Use the most voted number.
 
-The individual estimate by hour is added by the developer that intends to work on the issue at the daily meeting.
+The individual estimate by hour is added by the developer that intends to work on the issue at the Daily Meeting.
 
 
 
@@ -139,9 +139,9 @@ After the Sprint Meeting, and the iteration issues are approved and ready for wo
 
 This short standup meeting is best done if everyone is looking at the same board so it is easy to point out issues.
 
-- start by declaring issues you worked on yesterday
-- point out blocked issues and those you were not able to move
-- then grab issues you intend to work on today by assigning issues to yourself and pushing it to Dev Ready
+- Start by declaring issues you worked on yesterday.
+- Point out blocked issues and those you were not able to move.
+- Then grab issues you intend to work on today by assigning issues to yourself and pushing it to Dev Ready.
 
 > **For development**
 >
@@ -150,7 +150,7 @@ This short standup meeting is best done if everyone is looking at the same board
 
 Everyone will do the same until the Ready list is filled with tasks to be started by the day. In this way it is easy for the team to see who is having a hard time or if the team can do more by grabbing more issues from the backlog.
 
-Quick Tip: Keep it concise and only discuss the current position of each team member, more strategic discussions should be done outside this meeting
+Quick Tip: Keep it concise and only discuss the current position of each team member, more strategic discussions should be done outside this meeting.
 
 
 
@@ -160,13 +160,13 @@ Quick Tip: Keep it concise and only discuss the current position of each team me
 
 #### Dev Flow
 
-The Ready list and Dev are now ready. Begin by simply moving an issue to Dev In Progress.
+The Ready list and Devs are now ready. Begin by reviewing the definitions, add the estimate in hours, then move issue to Dev In Progress.
 
 > **Start development**
 >
 > `DEV READY` -> `DEV IN PROGRESS`
 
-There will be a lot of times wherein upon development, some criteria will not be met due to difference in systems and expectations. Definitions are not set in stone and was created to be a guide before starting work. Communicate the change to the Dev Lead and check if it is within expected outcome, relay to the Dev Lead and update the definition.
+There will be a lot of times wherein upon development, some criteria will not be met due to difference in systems and expectations. Definitions are not set in stone and was created to be a guide before starting work. Communicate the problem to the Dev Lead and check if it is within expected outcome and merits a definition update.
 
 After fulfilling the issue requirements in the target environment, push the issue to its next state.
 
@@ -182,7 +182,7 @@ Technical Tasks can be Closed immediately after completing.
 >
 > `DEV IN PROGRESS` -> `CLOSED`
 
-If there is unfulfilled criteria due to missing requirement or a major change in criteria should be requested, push the issue to Blocked, and make sure to Flag it. Assign, comment, and tag the Project Manager accordingly.
+If there is unfulfilled criteria due to missing requirement or a major change in definition should be requested, push the issue to Blocked, and make sure to Flag it. Assign, comment, and tag the Project Manager accordingly.
 
 > **Issue is blocked**
 >
@@ -225,10 +225,10 @@ If a QA Demo is deemed necessary, mostly when there are problematic results from
 
 **Handling missed criteria**
 
-Upon testing, there will also be times when a scenario or result is pointed out that may not be intended to the issue being developed. In this case communicate the result to the issue developer, see if it is intended or not. 
+Upon testing, there will also be times when a scenario or result is pointed out that may not be intended with regards the issue being developed. In this case communicate the result to the issue developer, see if it is intended or not. 
 
-- If it is intended but not in the definitions, relay to the Dev Lead and update the definition.
-- If it is not intended but within the scope of the issue, relay to the Dev Lead and update the definition.
+- If it is intended but not in the definitions, relay to the Dev Lead and check merit for definition update.
+- If it is not intended but within the scope of the issue, relay to the Dev Lead and check merit for definition update.
 - If it is not intended and is out of scope of the issue, tag the Project Manager and request for processing.
 
 Comment the resolution and proceed with the testing workflow.
@@ -243,10 +243,10 @@ To monitor and handle these, follow the guideline below.
 
 A change to the requirements will be accepted within the same sprint ONLY IF:
 
-- The change has been confirmed with the customer.
+- The change has been confirmed and negotiated with the client.
 - The change aligns well with the value proposition of a story in the sprint.
-- The change is small and can be completed before sprint production release date.
-- The change has been identified at least 2-3 days before sprint production release date.
+- The change is small and can be completed before sprint production release.
+- The change has been identified at least 2-3 days before sprint production release.
 
 
 
@@ -259,7 +259,7 @@ When all sprint issues are finally moved to Acceptance Ready, it is now ready fo
 
 ### Release Notes
 
-The Dev Lead will collect the release notes from the Release manager in JIRA. This document briefly outlines the expected modules of the project for easier review.
+The Dev Lead will collect the Release Notes from the Release manager in JIRA. This document briefly outlines the expected modules of the project for easier review.
 
 
 
@@ -271,9 +271,9 @@ The system being worked on is turned over to the client along with the Release N
 
 ### Issues from UAT
 
-If the UAT returns with additional requests, which it almost always will, take time to review the new requirements. Note that the initial requirements at this point has already been fulfilled, and the system is already shippable.
+If the UAT returns with additional requests, which it almost always will, take time to review the new requirements. Note that the initial agreed-upon requirements at this point has already been fulfilled, and the system is already shippable.
 
-To process these, treat them as Additional Request and see "Additional Requests mid-Sprint and how to deal with them".
+To process these, treat them as Additional Requests and see "Additional Requests mid-Sprint and how to deal with them".
 
 Failed definitions by client review will be recycled back to the workflow.
 
@@ -288,7 +288,7 @@ Failed definitions by client review will be recycled back to the workflow.
 When all is well and the sprint definitions are fully accepted by the client, it's time to get ready for deployment. 
 
 
-- Relay deployment procedure and agree on a deployment schedule with the client. 
+- Relay deployment procedures and agree on a deployment schedule with the client. 
 - Dev Lead will transition sprint issues to Awaiting Release.
 
 > **Definitions accepted**
@@ -301,8 +301,9 @@ When all is well and the sprint definitions are fully accepted by the client, it
 
 ### Deployment
 
-See [Deployment Procedures](https://github.com/radapdal/process/blob/master/SoftwareDevelopmentWorkflow.v.3.0.jpg).
+See [Deployment Procedures](https://github.com/radapdal/process/blob/master/deploymentprocedures.md).
 
+A QA must be delegated for review and be on stand by during the deployment.
 
 
 ### Verification and JIRA Release
@@ -313,7 +314,7 @@ After successfully deploying the system to production, push sprint issues to Rel
 >
 > `AWAITING RELEASE` -> `RELEASED TO PROD`
 
-At this point, a QA should be on standby to verify production deployment.
+The assigned QA will then verify the production deployment.
 
 
 #### Issue after Deployment
@@ -325,7 +326,7 @@ Issues that are deemed to be crucial will be inserted to the sprint, Flagged, se
 When the QA confirms the successful deployment, Dev Lead will release the sprint:
 
 - In JIRA Releases, on the Sprint row, choose Edit.
-- Change sprint name to the respective Version number based on Release Versioning Guideline. Save.
+- Change sprint name to the respective Version number based on [Release Versioning Guideline](https://semver.org/). Save.
 - Select the release, on the top right press Release.
 - Verify release date and click Release. This will only tag all version issues to the updated version name.
 - Manually transition version issues to Closed to close them.
@@ -343,7 +344,7 @@ This meeting is scheduled right after a successful sprint release.
 It tackles:
 
 - expectations for this sprint
-- highs and lows of the team members
+- highs and lows of each team member
 - workflow improvement
 - expectations for the next sprint
 
