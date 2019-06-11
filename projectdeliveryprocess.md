@@ -90,7 +90,7 @@ This process aims to:
 ### 3.2. Development Process
 
 - Staging and Develop setup
-- [Site Installation] (https://github.com/radapdal/process/blob/master/siteinstallationprocedures.md)
+- [Site Installation](https://github.com/radapdal/process/blob/master/siteinstallationprocedures.md)
   - Wordpress
   - Parent Theme and Child
   - Plugin Stack and other required plugins
