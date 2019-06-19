@@ -20,7 +20,7 @@ This workflow aims to:
 
 ## The Workflow
 
-![workflow](https://github.com/radapdal/process/blob/master/SoftwareDevelopmentWorkflow.v.3.0.jpg)
+![workflow](https://github.com/radapdal/process/blob/master/images/SoftwareDevelopmentWorkflow.v.3.0.jpg)
 
 https://yempo-solutions.atlassian.net/plugins/servlet/project-config/SC/workflows
 
