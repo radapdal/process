@@ -140,7 +140,7 @@ After the Sprint Meeting, and the iteration issues are approved and ready for wo
 This short standup meeting is best done if everyone is looking at the same board so it is easy to point out issues.
 
 - Start by declaring issues you worked on yesterday.
-- Point out blocked issues and those you were not able to move.
+- Point out blocked issues and those you were not able to move. Tag people that might clear said Blockers.
 - Then grab issues you intend to work on today by assigning issues to yourself and pushing it to Dev Ready.
 
 > **For development**
@@ -150,7 +150,9 @@ This short standup meeting is best done if everyone is looking at the same board
 
 Everyone will do the same until the Ready list is filled with tasks to be started by the day. In this way it is easy for the team to see who is having a hard time or if the team can do more by grabbing more issues from the backlog.
 
-Quick Tip: Keep it concise and only discuss the current position of each team member, more strategic discussions should be done outside this meeting.
+After the meeting, immediately follow up with the help regarding issue Blockers so it can be unblocked, the longer an issue rests as Blocked the more the risk of the sprint not meeting its end date.
+
+Quick Tip: Keep the meeting concise and only discuss the current position of each team member, more strategic discussions should be done outside this meeting.
 
 
 
@@ -265,7 +267,31 @@ The Dev Lead will collect the Release Notes from the Release manager in JIRA. Th
 
 ### UAT
 
-The system being worked on is turned over to the client along with the Release Notes for review. This can take some time and it is within the management's decision to proceed with the next sprint or not.
+When all sprint issues are in "Acceptance Ready", the system being worked on is turned over along with the Release Notes for review. The assessment can take some time and it is within the management's decision to proceed with the next sprint or not.
+
+
+
+### 2 Step UAT
+
+
+
+#### Internal UAT
+
+In order to combat the issue of relying too much on the response of the client for verification, an internal layer of confirmation is added to assure that the development process flows smoothly. This can also entail that the Sprint can be accepted for Release when the client takes too long to verify.
+
+- Make sure that all sprint issues are in Acceptance Ready
+- Dev Lead will collect and prepare the Release Notes.
+- Modify notes to add Timeline of sprint.
+- Upload Release Notes to sharepoint and copy share URL.
+- Reassign all sprint issues to Product Owner, and bulk comment on the issues.
+- Send an email to the Product Owner and Project Manager regarding the Internal UAT.
+- Based on the internal review results, confirm acceptance for all issues. For review problems, see "Issues from UAT" below.
+
+#### Client UAT
+
+When all sprint issues are internally reviewed and accepted, Dev Lead will bulk reassign, comment, and tag the Project Manager along with an email that the sprint is now for client review.
+
+Clients will sometimes take too long to review, so at an acceptable time (up to 1 week) after the Internal UAT, it is up to the management to decide if the team waits longer, or treat the sprint as client accepted so other sprints can start rolling.
 
 
 
@@ -287,9 +313,9 @@ Failed definitions by client review will be recycled back to the workflow.
 
 When all is well and the sprint definitions are fully accepted by the client, it's time to get ready for deployment. 
 
-
-- Relay deployment procedures and agree on a deployment schedule with the client. 
-- Dev Lead will transition sprint issues to Awaiting Release.
+- Create Deployment Checklist.
+- Relay checklist to the Project Manager and agree on a deployment schedule with the client. 
+- Dev Lead will grab sprint issues and them to "Awaiting Release".
 
 > **Definitions accepted**
 >
