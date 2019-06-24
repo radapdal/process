@@ -369,7 +369,7 @@ This meeting is scheduled right after a successful sprint release.
 
 It tackles:
 
-- expectations for this sprint
+- status of expectations for current sprint
 - highs and lows of each team member
 - workflow improvement
 - expectations for the next sprint

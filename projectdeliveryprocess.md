@@ -18,7 +18,7 @@ This process aims to:
 
 ## 1. Onboarding 
 
-### 1.1. Onboarding
+### 1.1. Project Planning
 
 - Sprint Zero
   - Define Epics
@@ -28,9 +28,9 @@ This process aims to:
   - Requirements per sprint
 - Project Charter
 
-### 1.2. Design and Site Structure Proposal
+### 1.2. Design and Site Structure
 
-- Initial Project Assets
+- Initial project assets
 - Branding document
 - Starting content
 
