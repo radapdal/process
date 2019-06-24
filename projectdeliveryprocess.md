@@ -18,17 +18,28 @@ This process aims to:
 
 ## 1. Onboarding 
 
-### 1.1 - 1.8 Standard Onboarding
+### 1.1. Onboarding
 
-### 1.9. Design and Site Structure Proposal
+- Sprint Zero
+  - Define Epics
+  - Create MVP
+  - Prioritization and Estimate
+  - Sprint Roadmap proposals
+  - Requirements per sprint
+- Project Charter
 
-* Project Assets folder
+### 1.2. Design and Site Structure Proposal
 
-### 1.10.  Software Development Requirements
+- Initial Project Assets
+- Branding document
+- Starting content
 
-* Branding document
-* Accounts added to 1Password
-* Site and Server Specifications
+### 1.3.  Software Development Requirements
+
+- Environment Accounts added to 1Password
+- Site and Server Specifications
+- Purchase premium theme and plugins
+- License and Keys to 1Password
 
 
 
@@ -39,40 +50,8 @@ This process aims to:
 - Project
 - Workflow
 - Board
-
-### 2.2. Kickoff Meeting/Sprint Zero
- 
-- Backlog
-    - Epics
-    - Initial tasks and stories
-    - Prioritization
-    - Rough estimate in points
-- Minimum Viable Product
-- Sprint roadmap proposals
-- Requirements per sprint
-- Pricing
-- Scheduling
-
-### 2.3. Project Charter
-
-- Project charter overview (client facing)  
-
-### 2.4. Proposal
-
-- Project charter definition email  
-
-### 2.5. Agreement
- 
-### 2.6. Gather Requirements
-
-- Purchase premium theme and plugins
-- Verify accounts and add to 1Password
-- License and Keys to 1Password
-
-### 2.7. Board update
-
-- Update version start date and end date
-- Build backlogs
+- Update version Start Date and End Date
+- Build Backlog
 
 
 
@@ -82,7 +61,7 @@ This process aims to:
 ### 3.1. Sprint Meeting
 
 - Backlog grooming
-- Issue descriptions from client requests
+- Detailed issue descriptions from client requests
 - Internal Definitions 
   - Acceptance Criteria
   - UX Criteria
@@ -99,12 +78,13 @@ This process aims to:
 
 ### 3.4. Release Process
 
-- Release notes
+- Release Notes
 - UAT
 - Additional request review
 - [Production Deployment](https://github.com/radapdal/process/blob/master/deploymentprocedures.md)
 - Verification and JIRA Release
 - Sprint Retrospective
+
 
 
 
