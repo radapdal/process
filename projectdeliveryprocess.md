@@ -28,19 +28,21 @@ This process aims to:
   - Requirements per sprint
 - Project Charter
 
-### 1.2. Design and Site Structure
+### 1.2.  Software Development Requirements
+
+- Systems Checklist
+  - Client Credentials
+  - Server and Site Specifications
+  - E-Commerce Specifications
+- Environment Accounts added to 1Password  
+- Purchase other premium theme and plugins
+- License and Keys to 1Password
+
+### 1.3. Asset Collection
 
 - Initial project assets
 - Branding document
 - Starting content
-
-### 1.3.  Software Development Requirements
-
-- Environment Accounts added to 1Password
-- Site and Server Specifications
-- Purchase premium theme and plugins
-- License and Keys to 1Password
-
 
 
 
