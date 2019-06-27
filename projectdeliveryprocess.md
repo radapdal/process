@@ -30,7 +30,7 @@ This process aims to:
 
 ### 1.2.  Software Development Requirements
 
-- Systems Checklist
+- [Systems Checklist](https://github.com/radapdal/process/blob/master/SystemsChecklist.xlsx)
   - Client Credentials
   - Server and Site Specifications
   - E-Commerce Specifications
