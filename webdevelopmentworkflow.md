@@ -15,15 +15,15 @@ This workflow aims to:
 - Reduce QA failures and back-and-forth delay in communication by means of QA Demos.
 - Promote discussion and eliminate miscommunication of requirements by having Daily Standup meetings and Backlog grooming.
 - Improve on previous and future work by means of Sprint Meetings and Sprint Retrospectives.
-- Push a steady stream of shippable project iterations via Versions and Releases so that the client and the team can see the progress and current state of the project.
+- Push a steady stream of shippable project iterations via Releases so that the client and the team can see the progress and current state of the project.
 
 
 
 ## The Workflow
 
-![workflow](https://github.com/radapdal/process/blob/master/images/SoftwareDevelopmentWorkflow.v.2.0.jpg)
+![workflow](https://github.com/radapdal/process/blob/master/images/SoftwareDevelopmentWorkflow.v.2.1.jpg)
 
-https://yempo-solutions.atlassian.net/plugins/servlet/project-config/SC/workflows
+https://yempo-solutions.atlassian.net/secure/admin/EditWorkflowScheme.jspa?schemeId=10837
 
 
 
@@ -34,67 +34,22 @@ Before the workflow starts the whole team gets to participate in the Sprint Meet
 
 - Ask questions regarding the issues.
 - Work with the team on how to define.
-- Provide an honest estimate.
+- Provide an honest estimate in hours.
 
 
 ### 1.1 Backlog Grooming
 
 > **Open**
 
-Backlog grooming is the re-prioritization of Open issues and description update, this is done by the Project Manager and communicated in the Sprint or Daily meeting.
+Backlog grooming is the re-prioritization of Open issues and description update, this is done by Management and communicated in the Sprint or Daily meeting.
 
 
 ### 1.2 Internal Definitions
 
 Here the requirement's criteria of completion are defined by the team to the best of their ability to make it easier for development and testing.
 
-#### Know your Issue: Task vs Story vs Bug
 
-Issues are primarily divided into Tasks, Stories, and Bugs
-
-***Tasks*** 
-
-Issues that can affect user experience but does not pertain to his/her behavior.
-
-Tasks are further differentiated as Technical Task, Content Task, and Maintenance Task.
-
-- *Technical Tasks* - issues that need no internal testing, as it is a requirement for other issues.
-
-   Ex. Setup site skeleton, create new admin user
-
-- *Content Tasks* - issues that affect user experience but does not pertain to his/her behaviour. 
-
-   These are defined and tested via **UX Criteria**. 
-
-   Ex. Reduce font size, change menu color, delete section
-
-- *Maintenance Tasks* - issues for the website maintenance service.
-
-   These are defined and tested by the **Update Impact** and detailed in the  site's Maintenance Log.
-  
-   Ex. Update Impact:
-   
-   - MAJOR: Woocommerce update, check cart design and total calculations
-
-***Stories***
-
-Issues that pertain to specific user behavior and its results.
-
-These are defined and tested via **Acceptance Criteria**.
-
-Ex. As a user I want to add an item to cart So I can include it in my checkout.
-
-- able to view option to add to cart
-- redirected to cart page on click
-- able to see item in cart page and list
-
-***Bugs***
-
-Bugs are issues that are found in Production. They are either tasks or stories.
-
-These are tested using either UX Criteria or Acceptance Criteria or both, whichever is applicable.
-
-Ex. Fix product add to cart button not showing in mobile
+Before proceeding, it is best to fully understand the Issue types used in this workflow. (Know Your Issue Types)[#know-your-issue-types]
 
 
 #### Approval
@@ -104,7 +59,7 @@ Ex. Fix product add to cart button not showing in mobile
 >
 > `OPEN TICKET` -> `DEFINITION APPROVED`
 
-Once the definitions are completed, it is confirmed by the Project Manager. Always try to get complete approval on all definitions before starting the sprint to avoid recycle.
+Once the definitions are completed, it is confirmed by the Project Coordinator. Always try to get complete approval on all definitions before starting the sprint to avoid recycle.
 
 
 ### 1.3 Point Estimates
@@ -132,7 +87,7 @@ The individual estimate by hour is added by the developer that intends to work o
 
 ## Development
 
-After the Sprint Meeting, and the iteration issues are approved and ready for work, the sprint can now start on its intended start date.
+After the Sprint Meeting, and the iteration issues are approved and ready for work, the sprint can now start building.
 
 
 ### Daily Meeting
@@ -148,11 +103,11 @@ This short standup meeting is best done if everyone is looking at the same board
 > `DEFINITION APPROVED` -> `DEV READY`
 
 
-Everyone will do the same until the Ready list is filled with tasks to be started by the day. In this way it is easy for the team to see who is having a hard time during the day or if the team can do more by grabbing more issues from the backlog.
+Everyone will do the same until the Ready list is filled with tasks to be moved by the day. In this way it is easy for the team to see who is having a hard time or if the team can do more by grabbing more issues from the backlog.
 
 After the meeting, immediately follow up with the help regarding issue Blockers so it can be unblocked, the longer an issue rests as Blocked the more the risk of the sprint not meeting its end date.
 
-Quick Tip: Keep the meeting concise and only discuss the current position of each team member, more strategic discussions should be done outside this meeting.
+Quick Tip: Keep the Daily Meeting concise and only discuss the current position of each team member, more strategic discussions should be done outside this meeting.
 
 
 
@@ -160,7 +115,7 @@ Quick Tip: Keep the meeting concise and only discuss the current position of eac
 
 #### Dev Flow
 
-The Ready list and Devs are now ready. Begin by reviewing the definitions, add the estimate in hours, then move issue to Dev In Progress.
+The Ready list and Devs are now ready. Begin by reviewing the definitions, then move the issue to Dev In Progress.
 
 > **Start Development**
 >
@@ -182,7 +137,7 @@ Technical Tasks can be pushed for release immediately after completing.
 >
 > `DEV IN PROGRESS` -> `RELEASE READY`
 
-If there is unfulfilled criteria due to missing requirement or a major change in definition should be requested, push the issue to Blocked, and make sure to Flag it. Assign, comment, and tag the Project Manager accordingly.
+If there is unfulfilled criteria due to missing requirement or a major change in definition should be requested, push the issue to Blocked, and make sure to Flag it. Assign, comment, and tag the Project Lead accordingly.
 
 > **Issue is Blocked**
 >
@@ -210,7 +165,7 @@ Those that failed the criteria will be sent to QA Failed. Reassign, comment, and
 >
 > `QA IN PROGRESS` -> `QA FAILED`
 
-If issue could not be tested due to circumstances, move it to Blocked and Flag it. Assign, comment, and tag the Project Manager accordingly.
+If issue could not be tested due to circumstances, move it to Blocked and Flag it. Assign, comment, and tag the Project Lead accordingly.
 
 > **Issue is Blocked**
 >
@@ -218,14 +173,14 @@ If issue could not be tested due to circumstances, move it to Blocked and Flag i
 
 **QA Demo**
 
-A QA Demo can be requested when there are problematic results from scenarios tested thats needs to be demonstrated to the issue developer for replication and clarity. Communicate with the issue developer and agree upon a scheduled short meeting. Demonstrate the problems found and how it was achieved, discuss if this can be immediately addressed in parallel while meeting, or too big of an issue and be handled separately. Resolve all problems that can be resolved in this meeting and process the outstanding issues accordingly.
+A QA Demo can be requested when there are problematic results from scenarios tested thats needs to be demonstrated to the issue developer for replication and clarity. Communicate with the issue developer and agree upon a scheduled short meeting. Demonstrate the problems found and how it was achieved, discuss if this can be immediately addressed in parallel while meeting, or too big of an issue and be handled separately. Resolve all problems that can be resolved in this meeting and process the remaining issues accordingly.
 
 **Handling missed criteria**
 
 Upon testing, there will also be times when a scenario or result is pointed out that may not be intended with regards to the issue being developed. In this case communicate the result to the issue developer, see if it is intended or not. 
 
 - If it is **intended but not in the definitions**, or if it is **not intended but within scope** of the issue, relay to the Project Lead and check merit for definition update.
-- If it is **not intended and is out of scope** of the issue, tag the Project Manager and request for processing.
+- If it is **not intended and is out of scope** of the issue, tag the Project Lead and request for processing.
 
 Comment the resolution and proceed with the testing workflow.
 
@@ -276,9 +231,9 @@ In order to combat the issue of relying too much on the response of the client f
 - Upload Release Notes to sharepoint and copy share URL.
 - Transition all sprint issues to "Released Internal".
 - Reassign sprint issues to Product Owner, and bulk comment on the issues.
-- Send an email to the Product Owner and Project Manager regarding the Internal UAT.
+- Set a schedule for an Internal UAT Demo with the project management regarding the release.
 
-Based on the Internal UAT results, confirm acceptance for all issues. For review problems, see "Issues from UAT" below.
+Based on the Internal UAT results, confirm acceptance for all issues. For review problems, see (Issues from UAT)[#Issues-from-UAT] below.
 
 #### Client UAT
 
@@ -288,7 +243,7 @@ When all sprint issues are internally reviewed and accepted, Project Lead will s
 >
 > `RELEASE INTERNAL` -> `RELEASED TO STAGING`
 
-After deployment, Project Lead will transition sprint issues to "Released to Staging", bulk reassign, comment, and tag the Project Manager along with an email update that the staging deployment has been completed and the sprint is now for Client UAT.
+After deployment, Project Lead will transition sprint issues to "Released to Staging", comment, and tag the Project Coordinator along with an email update that the staging deployment has been completed and the sprint is now for Client UAT.
 
 Clients will sometimes take too long to review, so at an acceptable time (up to 2 weeks) after staging release, it is up to the management to decide if the team waits longer, or treat the release as client accepted so other sprints can start rolling.
 
@@ -297,21 +252,21 @@ Clients will sometimes take too long to review, so at an acceptable time (up to 
 
 If the UAT returns with additional requests, which it almost always will, take time to review the new requirements. Note that the initial committed requirements at this point has already been fulfilled, and other issues from the next sprint might take priority.
 
-To process these, treat them as Additional Requests and see "Additional Requests mid-Sprint and How to Deal with them".
+To process these, treat them as Additional Requests and see (Additional Requests mid-Sprint and How to Deal with them)[#Additional-Requests-mid-Sprint-and-How-to-Deal-with-them].
 
 Failed issues by client review will undergo change rollback and is recycled back to the workflow.
 
-> **Client UAT Failed**
+> **Deployment Rollback**
 >
 > `RELEASED TO STAGING` -> `REOPENED`
 
 
 ### Getting ready for Production
 
-When the client is ready to push the staged changes to production, it's time to get ready for deployment. 
+When the client is ready to push the staged changes to production, it's time to get ready for Production Deployment. 
 
 - Create Deployment Checklist.
-- Relay checklist to the Project Manager and agree on a deployment schedule with the client. 
+- Relay checklist to the Project Coordinator and agree on a deployment schedule with the client. 
 - Project Lead will grab sprint issues.
 - Update sprint due date to the scheduled deployment date.
 
@@ -320,7 +275,7 @@ When the client is ready to push the staged changes to production, it's time to 
 
 See [Deployment Procedures](https://github.com/radapdal/process/blob/master/deploymentprocedures.md).
 
-A QA must be delegated for review and be on stand by during the deployment. After successfully deploying the system to production, the assigned QA will then verify the deployment.
+A QA must be delegated for review and be on stand-by during the deployment. After successfully deploying the system to production, the assigned QA will then verify the deployment.
 
 After a successful deployment and verification, transition issues to "Released to Production".
 
@@ -328,7 +283,7 @@ After a successful deployment and verification, transition issues to "Released t
 >
 > `RELEASED TO STAGING` -> `RELEASED TO PRODUCTION`
 
-Reassign, comment, and tag the Project Manager for closing.
+Comment, and tag the Project Coordinator for client verification. If the client verifies the release, or after a designated time after verification (3 days) the sprint issues can now be safely closed.
 
 > **Deployed Approved**
 >
@@ -336,11 +291,11 @@ Reassign, comment, and tag the Project Manager for closing.
 
 #### Issues after Deployment
 
-If a problem is unfortunately found due to the deployment, target the source from the sprint issues then assess problem as an Additional Request (see "Additional Requests mid-Sprint and how to deal with them").
+If a problem is unfortunately found due to the deployment, target the source from the sprint issues then assess problem as an (Additional Request)[#Additional-Requests-mid-Sprint-and-how-to-deal-with-them].
 
 Issues that are deemed to be crucial will be inserted back to the sprint, Flagged, set to highest Priority, and cycled to the development workflow with urgency.
 
-> **Deployment Failed**
+> **Deployment Rollback**
 >
 > `RELEASED TO PRODUCTION` -> `REOPENED`
 
@@ -358,6 +313,70 @@ It tackles:
 - workflow improvement
 - expectations for the next sprint
 
----
+
+
+
+----
+
+
+
+
+KNOWGLEDGE BASE
+
+
+## Know your Issue Types 
+
+###Task vs Story vs Bug
+
+Issues are primarily divided into Tasks, Stories, and Bugs
+
+***Tasks*** 
+
+Issues that can affect user experience but does not pertain to his/her behavior.
+
+Tasks are further differentiated as Technical Task, Content Task, and Maintenance Task.
+
+- *Technical Tasks* - issues that need no internal testing, as it is a requirement for other issues.
+
+   Ex. Setup site skeleton, create new admin user
+
+- *Content Tasks* - issues that affect user experience but does not pertain to his/her behaviour. 
+
+   These are defined and tested via **UX Criteria**. 
+
+   Ex. Reduce font size, change menu color, delete section
+
+- *Maintenance Tasks* - issues for the website maintenance service.
+
+   These are defined and tested by the **Update Impact** and detailed in the  site's Maintenance Log.
+  
+   Ex. Update Impact:
+   
+   - MAJOR: Woocommerce update, check cart design and total calculations
+
+***Stories***
+
+Issues that pertain to specific user behavior and its results.
+
+These are defined and tested via **Acceptance Criteria**.
+
+Ex. As a user I want to add an item to cart So I can include it in my checkout.
+
+- able to view option to add to cart
+- redirected to cart page on click
+- able to see item in cart page and list
+
+***Bugs***
+
+Bugs are issues that are found in Production. They are either tasks or stories.
+
+These are tested using either UX Criteria or Acceptance Criteria or both, whichever is applicable.
+
+Ex. Fix product add to cart button not showing in mobile
+
+
+
+
+----
 
 Congratulations you have released a sprint! Cheers!
