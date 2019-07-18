@@ -382,12 +382,12 @@ Some issues are also expected to be completed on a target environment and does n
 
 
 
-KNOWGLEDGE BASE
+# KNOWGLEDGE BASE
 
 
-## Know your Issue Types 
+### Know your Issue Types 
 
-###Task vs Story vs Bug
+#### Task vs Story vs Bug
 
 Issues are primarily divided into Tasks, Stories, and Bugs
 
@@ -436,9 +436,20 @@ These are tested using either UX Criteria or Acceptance Criteria or both, whiche
 Ex. Fix product add to cart button not showing in mobile
 
 
-## Versioning
+### Versioning
 
-### Major.Minor.Patch
+#### MAJOR.MINOR.PATCH
+
+From [**Semantic Versioning 2.0.0**](https://semver.org)
+
+Given a version number MAJOR.MINOR.PATCH, increment the:
+
+1. MAJOR version when you make incompatible API changes,
+2. MINOR version when you add functionality in a backwards-compatible manner, and
+3. PATCH version when you make backwards-compatible bug fixes.
+
+Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
+
 
 
 
