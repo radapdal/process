@@ -26,8 +26,9 @@ This workflow aims to:
 https://yempo-solutions.atlassian.net/secure/admin/EditWorkflowScheme.jspa?schemeId=10837
 
 
-For **Sprint Workflow**, start at (**Sprint Meeting**)[#sprint-meeting].
-For **Service Workflow**, jump to (**Services**)[#services].
+For **Sprint Workflow**, start at [**Sprint Meeting**](#sprint-meeting).
+
+For **Services Workflow**, jump to [**Services**](#services).
 
 
 
@@ -52,7 +53,7 @@ Backlog grooming is the re-prioritization of Open issues and description update,
 Here the requirement's criteria of completion are defined by the team to the best of their ability to make it easier for development and testing.
 
 
-Before proceeding, it is best to fully understand the Issue types used in this workflow. (Know Your Issue Types)[#know-your-issue-types]
+Before proceeding, it is best to fully understand the Issue types used in this workflow. [**Know Your Issue Types**](#know-your-issue-types).
 
 
 #### Approval
@@ -236,7 +237,7 @@ In order to combat the issue of relying too much on the response of the client f
 - Reassign sprint issues to Product Owner, and bulk comment on the issues.
 - Set a schedule for an Internal UAT Demo with the project management regarding the release.
 
-Based on the Internal UAT results, confirm acceptance for all issues. For review problems, see (Issues from UAT)[#issues-from-uat] below.
+Based on the Internal UAT results, confirm acceptance for all issues. For review problems, see [**Issues from UAT**](#issues-from-uat) below.
 
 #### Client UAT
 
@@ -255,7 +256,7 @@ Clients will sometimes take too long to review, so at an acceptable time (up to 
 
 If the UAT returns with additional requests, which it almost always will, take time to review the new requirements. Note that the initial committed requirements at this point has already been fulfilled, and other issues from the next sprint might take priority.
 
-To process these, treat them as Additional Requests and see (Additional Requests mid-Sprint and How to Deal with them)[#additional-requests-mid-sprint-and-how-to-deal-with-them].
+To process these, treat them as Additional Requests and see [**Additional Requests mid-Sprint and How to Deal with them**](additional-requests-mid-sprint-and-how-to-deal-with-them).
 
 Failed issues by client review will undergo change rollback and is recycled back to the workflow.
 
@@ -294,7 +295,7 @@ Comment, and tag the Project Coordinator for client verification. If the client 
 
 #### Issues after Deployment
 
-If a problem is unfortunately found due to the deployment, target the source from the sprint issues then assess problem as an (Additional Request)[#additional-requests-mid-sprint-and-how-to-deal-with-them].
+If a problem is unfortunately found due to the deployment, target the source from the sprint issues then assess problem as an [**Additional Request**](#additional-requests-mid-sprint-and-how-to-deal-with-them).
 
 Issues that are deemed to be crucial will be inserted back to the sprint, Flagged, set to highest Priority, and cycled to the development workflow with urgency.
 
