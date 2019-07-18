@@ -26,9 +26,12 @@ This workflow aims to:
 https://yempo-solutions.atlassian.net/secure/admin/EditWorkflowScheme.jspa?schemeId=10837
 
 
+For **Sprint Workflow**, start at (**Sprint Meeting**)[#sprint-meeting].
+For **Service Workflow**, jump to (**Services**)[#services].
 
 
-## 1. Sprint Meeting
+
+## Sprint Meeting
 
 Before the workflow starts the whole team gets to participate in the Sprint Meeting. In this meeting, the initial requirements for this iteration is introduced, clarified, defined, and estimated. At this point, everyone will be looking at the Open issues and its order based on priority.
 
@@ -37,14 +40,14 @@ Before the workflow starts the whole team gets to participate in the Sprint Meet
 - Provide an honest estimate in hours.
 
 
-### 1.1 Backlog Grooming
+### Backlog Grooming
 
 > **Open**
 
 Backlog grooming is the re-prioritization of Open issues and description update, this is done by Management and communicated in the Sprint or Daily meeting.
 
 
-### 1.2 Internal Definitions
+### Internal Definitions
 
 Here the requirement's criteria of completion are defined by the team to the best of their ability to make it easier for development and testing.
 
@@ -62,7 +65,7 @@ Before proceeding, it is best to fully understand the Issue types used in this w
 Once the definitions are completed, it is confirmed by the Project Coordinator. Always try to get complete approval on all definitions before starting the sprint to avoid recycle.
 
 
-### 1.3 Point Estimates
+### Point Estimates
 
 Points are added to all issues for the sprint. Point estimates are used to represent task difficulty, not estimated time. This is meant to provide a consensus on team members on how difficult they think the task is and is used to measure total difficulty of the iteration. 
 
@@ -233,7 +236,7 @@ In order to combat the issue of relying too much on the response of the client f
 - Reassign sprint issues to Product Owner, and bulk comment on the issues.
 - Set a schedule for an Internal UAT Demo with the project management regarding the release.
 
-Based on the Internal UAT results, confirm acceptance for all issues. For review problems, see (Issues from UAT)[#Issues-from-UAT] below.
+Based on the Internal UAT results, confirm acceptance for all issues. For review problems, see (Issues from UAT)[#issues-from-uat] below.
 
 #### Client UAT
 
@@ -252,7 +255,7 @@ Clients will sometimes take too long to review, so at an acceptable time (up to 
 
 If the UAT returns with additional requests, which it almost always will, take time to review the new requirements. Note that the initial committed requirements at this point has already been fulfilled, and other issues from the next sprint might take priority.
 
-To process these, treat them as Additional Requests and see (Additional Requests mid-Sprint and How to Deal with them)[#Additional-Requests-mid-Sprint-and-How-to-Deal-with-them].
+To process these, treat them as Additional Requests and see (Additional Requests mid-Sprint and How to Deal with them)[#additional-requests-mid-sprint-and-how-to-deal-with-them].
 
 Failed issues by client review will undergo change rollback and is recycled back to the workflow.
 
@@ -291,7 +294,7 @@ Comment, and tag the Project Coordinator for client verification. If the client 
 
 #### Issues after Deployment
 
-If a problem is unfortunately found due to the deployment, target the source from the sprint issues then assess problem as an (Additional Request)[#Additional-Requests-mid-Sprint-and-how-to-deal-with-them].
+If a problem is unfortunately found due to the deployment, target the source from the sprint issues then assess problem as an (Additional Request)[#additional-requests-mid-sprint-and-how-to-deal-with-them].
 
 Issues that are deemed to be crucial will be inserted back to the sprint, Flagged, set to highest Priority, and cycled to the development workflow with urgency.
 
@@ -321,6 +324,63 @@ It tackles:
 
 
 
+# Services 
+
+After a successful website build and release, or a new client requires site maintenance and support, the workflow will seamlessly transition to a Continuous Delivery release.
+
+**Continuous vs Sprinting**
+
+In Sprints, we release large chunks of the software as one Major version. This means grouping issues beforehand, developing and testing them, then sending them for UAT before pushing to Production.
+
+However, in a Continuous Delivery process, issues are individually assessed to a target version in Staging or Production. This release process allows for two things: 
+	
+	1. Allows the Staging to build up Minor versions and be pushed when required.
+    2. Allows emergency Patches to push ahead of the versions in staging directly into Production.
+
+
+## Workflow
+
+To properly understand the distinction of where issues would go, see ["Versioning"](#versioning).
+
+Basically, Major versions will be developed on the Sprint board, while Minor versions and Patches will be handled by the Service Kanban.
+
+The Service Kanban will follow the same DevQA process with minor changes to the Release pipeline. 
+
+> **QA Approved**
+>
+> `QA IN PROGRESS` -> `RELEASE READY`
+
+When an issue is approved by QA, it is moved to "Release Ready" for assessment of the Project Lead.
+
+- Minor version issues will sit at "Release Ready" to wait for the other issues in the version before it can be deployed to Staging.
+- Patches will be immediately pushed to Staging, then to Production.
+
+> **For Client UAT**
+>
+> `RELEASED INTERNAL` -> `RELEASED TO STAGING`
+
+> **Deployed to Production**
+>
+> `RELEASED TO STAGING` -> `RELEASED TO PRODUCTION`
+
+Some issues are also expected to be completed on a target environment and does not need to be pushed further into the release pipeline. These issues can be transitioned to "Closed" after QA Verification.
+
+> **Release Approved**
+>
+> `RELEASED INTERNAL` -> `CLOSED`
+
+> **Release Approved**
+>
+> `RELEASED TO STAGING` -> `CLOSED`
+
+
+
+
+----
+
+
+
+
 KNOWGLEDGE BASE
 
 
@@ -332,7 +392,7 @@ Issues are primarily divided into Tasks, Stories, and Bugs
 
 ***Tasks*** 
 
-Issues that can affect user experience but does not pertain to his/her behavior.
+Issues that can affect user experience but does not directly pertain to user behaviour.
 
 Tasks are further differentiated as Technical Task, Content Task, and Maintenance Task.
 
@@ -340,7 +400,7 @@ Tasks are further differentiated as Technical Task, Content Task, and Maintenanc
 
    Ex. Setup site skeleton, create new admin user
 
-- *Content Tasks* - issues that affect user experience but does not pertain to his/her behaviour. 
+- *Content Tasks* - issues that affect user experience.
 
    These are defined and tested via **UX Criteria**. 
 
@@ -374,6 +434,10 @@ These are tested using either UX Criteria or Acceptance Criteria or both, whiche
 
 Ex. Fix product add to cart button not showing in mobile
 
+
+## Versioning
+
+### Major.Minor.Patch
 
 
 

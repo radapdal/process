@@ -51,7 +51,7 @@ This process aims to:
 ### 2.1. JIRA
 - Project
 - Workflow
-- Board
+- Boards
 - Update version Start Date and End Date
 - Build Backlog
 
@@ -75,17 +75,15 @@ This process aims to:
   - Wordpress
   - Parent Theme and Child
   - Plugin Stack and other required plugins
-- Daily Meetings
 - [Development Workflow](https://github.com/radapdal/process/blob/master/webdevelopmentworkflow.md)
 
 ### 3.4. Release Process
 
-- Release Notes
+- Sprint Completion and Version Release
+- Release Notes 
 - UAT
-- Additional request review
-- [Production Deployment](https://github.com/radapdal/process/blob/master/deploymentprocedures.md)
-- Verification and JIRA Release
-- Sprint Retrospective
+- [Production Deployment](https://github.com/radapdal/process/blob/master/deploymentprocedures.md) 
+- Sprint and Workflow Retrospective
 
 
 
@@ -94,4 +92,4 @@ This process aims to:
 
 - Next Sprint
 - Offboarding
-- Transition from Sprint to Scheduled-Release 
+- Transition from Sprint Board to Service Board
