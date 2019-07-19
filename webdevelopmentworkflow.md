@@ -21,7 +21,7 @@ This workflow aims to:
 
 ## The Workflow
 
-![workflow](https://github.com/radapdal/process/blob/master/images/SoftwareDevelopmentWorkflow.v.2.1.jpg)
+![workflow](https://github.com/radapdal/process/blob/master/images/SoftwareDevelopmentWorkflow.v.2.2.jpg)
 
 https://yempo-solutions.atlassian.net/secure/admin/EditWorkflowScheme.jspa?schemeId=10837
 
@@ -127,7 +127,7 @@ The Ready list and Devs are now ready. Begin by reviewing the definitions, then 
 
 There will be a lot of times wherein upon development, some criteria will not be met due to difference in systems and expectations. Definitions are not set in stone and was created to be a guide before starting work. Communicate the problem to the Project Lead and check if it is within expected outcome and merits a definition update.
 
-After fulfilling the issue requirements in the target environment, push the issue to its next state.
+After fulfilling the issue requirements in the development push the changes to staging and transition the issue to its next state.
 
 Issues with criteria should be pushed to QA. Assign, comment, and tag the QA accordingly.
 
@@ -241,13 +241,11 @@ Based on the Internal UAT results, confirm acceptance for all issues. For review
 
 #### Client UAT
 
-When all sprint issues are internally reviewed and accepted, Project Lead will start deployment of issue changes to the staging server.
+When all sprint issues are internally reviewed and accepted, Project Coordinator will confirm to the client that the staging site is ready for their review. Project Lead will transition issues to "Released to Client".
 
 > **For Client UAT**
 >
-> `RELEASE INTERNAL` -> `RELEASED TO STAGING`
-
-After deployment, Project Lead will transition sprint issues to "Released to Staging", comment, and tag the Project Coordinator along with an email update that the staging deployment has been completed and the sprint is now for Client UAT.
+> `RELEASE INTERNAL` -> `RELEASED TO CLIENT`
 
 Clients will sometimes take too long to review, so at an acceptable time (up to 2 weeks) after staging release, it is up to the management to decide if the team waits longer, or treat the release as client accepted so other sprints can start rolling.
 
@@ -262,7 +260,7 @@ Failed issues by client review will undergo change rollback and is recycled back
 
 > **Deployment Rollback**
 >
-> `RELEASED TO STAGING` -> `REOPENED`
+> `RELEASED TO CLIENT` -> `REOPENED`
 
 
 ### Getting ready for Production
@@ -331,9 +329,9 @@ After a successful website build and release, or a new client requires site main
 
 **Continuous vs Sprinting**
 
-In Sprints, we release large chunks of the software as one Major version. This means grouping issues beforehand, developing and testing them, then sending them for UAT before pushing to Production.
+In Sprints, we release large chunks of the software as one Major version. This means grouping issues beforehand, developing and testing them, then sending them for a 2-Step UAT before pushing to Production.
 
-However, in a Continuous Delivery process, issues are individually assessed to a target version in Staging or Production. This release process allows for two things: 
+However, in a Continuous Delivery process, issues are individually assessed to a target version in Staging or Production, and can bypass UAT. This release process allows for two things: 
 	
 	1. Allows the Staging to build up Minor versions and be pushed when required.
     2. Allows emergency Patches to push ahead of the versions in staging directly into Production.
@@ -353,16 +351,21 @@ The Service Kanban will follow the same DevQA process with minor changes to the 
 
 When an issue is approved by QA, it is moved to "Release Ready" for assessment of the Project Lead.
 
-- Minor version issues will sit at "Release Ready" to wait for the other issues in the version before it can be deployed to Staging.
-- Patches will be immediately pushed to Staging, then to Production.
+- Minor version issues will sit at "Release Ready" to wait for the other issues in the version before so it can undergo UAT.
+
+> **For Internal UAT**
+>
+> `RELEASE READY` -> `RELEASED INTERNAL`
 
 > **For Client UAT**
 >
-> `RELEASED INTERNAL` -> `RELEASED TO STAGING`
+> `RELEASED INTERNAL` -> `RELEASED TO CLIENT`
 
-> **Deployed to Production**
+- Patches will bypass UAT and be immediately pushed to Production.
+
+> **Patch Deployed to Production**
 >
-> `RELEASED TO STAGING` -> `RELEASED TO PRODUCTION`
+> `RELEASE READY` -> `RELEASED TO PRODUCTION`
 
 Some issues are also expected to be completed on a target environment and does not need to be pushed further into the release pipeline. These issues can be transitioned to "Closed" after QA Verification.
 
@@ -373,6 +376,10 @@ Some issues are also expected to be completed on a target environment and does n
 > **Release Approved**
 >
 > `RELEASED TO STAGING` -> `CLOSED`
+
+> **Release Approved**
+>
+> `RELEASED TO PRODUCTION` -> `CLOSED`
 
 
 
