@@ -16,33 +16,30 @@ This process aims to:
 
 
 
-## 1. Onboarding 
+## 1. Charter 
 
-### 1.1. Project Planning
+### 1.1. Initiation
 
-- Sprint Zero
-  - Define Epics
-  - Create MVP
-  - Prioritization and Estimate
-  - Sprint Roadmap proposals
-  - Requirements per sprint
-- Project Charter
+- Gather client requirements
+- Technology research
+- Define Epics and MVP
+- Sprint Roadmap
+- Draft Proposal
 
-### 1.2.  Software Development Requirements
+### 1.2. Onboarding
 
+- Initiate Onboarding process
+- Asset Collection
+  - Purchase premium theme and plugins
+  - Branding document
+  - Starting content
 - [Systems Checklist](https://github.com/radapdal/process/blob/master/SystemsChecklist.xlsx)
   - Client Credentials
-  - Server and Site Specifications
-  - E-Commerce Specifications
-- Environment Accounts added to 1Password  
-- Purchase other premium theme and plugins
-- License and Keys to 1Password
+  - E-Commerce Specifications 
+  - Server and Site Specifications 
+- Project Timeframes
+- Team Kick-Off Meeting
 
-### 1.3. Asset Collection
-
-- Initial project assets
-- Branding document
-- Starting content
 
 
 
