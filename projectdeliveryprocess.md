@@ -9,9 +9,9 @@ From conversation to definition to release.
 The goal of this process is to streamline the delivery of software via iterative scoping and deployment.
 
 This process aims to:
-- Get constant feedback and reduce error by deploying small but consistent iteration.
-- Reduce risk of over-commitment and under-delivery by focusing the few tasks for the iteration.
-- Increase team productivity by sense of accomplishment on every successful release.
+- Get constant feedback and reduce error by deploying small but consistent iterations.
+- Reduce risk of over-commitment and under-delivery by focusing key tasks required for the iteration.
+- Increase client trust and team productivity by accomplishing multiple successful releases.
 
 
 
@@ -22,8 +22,7 @@ This process aims to:
 
 - Gather client requirements
 - Technology research
-- Define Epics and MVP
-- Sprint Roadmap
+- Sprint Roadmap and MVP
 - Draft Proposal
 
 ### 1.2. Onboarding
@@ -46,10 +45,8 @@ This process aims to:
 ## 2. Project Setup
 
 ### 2.1. JIRA
-- Project
-- Workflow
-- Boards
-- Update version Start Date and End Date
+- Project Build
+- Create versions
 - Build Backlog
 
 
@@ -61,13 +58,11 @@ This process aims to:
 
 - Backlog grooming
 - Detailed issue descriptions from client requests
-- Internal Definitions 
-  - Acceptance Criteria
-  - UX Criteria
+- Internal Definitions & Acceptance Criteria
 
 ### 3.2. Development Process
 
-- Staging and Develop setup
+- Staging/Development setup
 - [Site Installation](https://github.com/radapdal/process/blob/master/siteinstallationprocedures.md)
   - Wordpress
   - Parent Theme and Child
@@ -76,10 +71,11 @@ This process aims to:
 
 ### 3.4. Release Process
 
-- Sprint Completion and Version Release
-- Release Notes 
+- Release Notes
+- Version naming and release 
+- [Full Site Deployment](https://yempo-solutions.atlassian.net/browse/SMSJT-27) 
+- [Push/Pull Deployment](https://yempo-solutions.atlassian.net/browse/SMSJT-29) 
 - UAT
-- [Production Deployment](https://github.com/radapdal/process/blob/master/deploymentprocedures.md) 
 - Sprint and Workflow Retrospective
 
 
@@ -89,4 +85,3 @@ This process aims to:
 
 - Next Sprint
 - Offboarding
-- Transition from Sprint Board to Service Board

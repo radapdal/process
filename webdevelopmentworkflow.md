@@ -12,23 +12,28 @@ This workflow aims to:
 
 - Remove guesswork, constant recycling of tasks, and instill Test-First philosophy by adding a Definition phase so that management, developer, and QA are on the same page before an issue is even started.
 - Provide a more accurate estimate on issues via Points system.
-- Reduce QA failures and back-and-forth delay in communication by means of QA Demos.
-- Promote discussion and eliminate miscommunication of requirements by having Daily Standup meetings and Backlog grooming.
+- Expedite QA issues and eliminate back-and-forth delay in communication by means of QA Demos.
+- Promote discussion and avoid miscommunication by having Daily Standup meetings and Backlog grooming.
 - Improve on previous and future work by means of Sprint Meetings and Sprint Retrospectives.
-- Push a steady stream of shippable project iterations via Releases so that the client and the team can see the progress and current state of the project.
+- Push a steady stream of shippable iterations via Releases so that the client and the team can see the progress and current state of the project.
 
 
 
 ## The Workflow
 
-![workflow](https://github.com/radapdal/process/blob/master/images/SoftwareDevelopmentWorkflow.v.2.2.jpg)
+![workflow](https://github.com/radapdal/process/blob/master/images/SoftwareDevelopmentWorkflow.v.2.4.1.jpg)
 
-https://yempo-solutions.atlassian.net/secure/admin/EditWorkflowScheme.jspa?schemeId=10837
+For **Web Development Workflow**, start at [**Sprint Meeting**](#web-development-and-technical-services).
+
+For **Maintenance Workflow**, jump to [**Maintenance Services**](#maintenance-services).
 
 
-For **Sprint Workflow**, start at [**Sprint Meeting**](#sprint-meeting).
 
-For **Services Workflow**, jump to [**Services**](#services).
+----
+
+
+
+# Web Development and Technical Services
 
 
 
@@ -40,17 +45,21 @@ Before the workflow starts the whole team gets to participate in the Sprint Meet
 - Work with the team on how to define.
 - Provide an honest estimate in hours.
 
+### Versioning
+
+To properly understand the distinction of where issues would go, see ["Versioning"](#versioning).
+
 
 ### Backlog Grooming
 
 > **Open**
 
-Backlog grooming is the re-prioritization of Open issues and description update, this is done by Management and communicated in the Sprint or Daily meeting.
+Backlog grooming is the re-prioritization of Open issues and requirements update, this is done by Management and communicated in the Sprint or Daily meeting.
 
 
 ### Internal Definitions
 
-Here the requirement's criteria of completion are defined by the team to the best of their ability to make it easier for development and testing.
+Here the requirement's criteria of completion are defined by the dev team to the best of their ability to make it easier for development and testing.
 
 
 Before proceeding, it is best to fully understand the Issue types used in this workflow. [**Know Your Issue Types**](#know-your-issue-types).
@@ -323,59 +332,27 @@ It tackles:
 
 
 
-# Services 
+# Maintenance Services 
 
 After a successful website build and release, or a new client requires site maintenance and support, the workflow will seamlessly transition to a Continuous Delivery release.
 
 **Continuous vs Sprinting**
 
-In Sprints, we release large chunks of the software as one Major version. This means grouping issues beforehand, developing and testing them, then sending them for a 2-Step UAT before pushing to Production.
+In Sprints, we release chunks of the software as versions. This means grouping issues beforehand, developing and testing them, then sending them for a 2-Step UAT before pushing to Production.
 
-However, in a Continuous Delivery process, issues are individually assessed to a target version in Staging or Production, and can bypass UAT. This release process allows for two things: 
-	
-	1. Allows the Staging to build up Minor versions and be pushed when required.
-    2. Allows emergency Patches to push ahead of the versions in staging directly into Production.
+However, in a Continuous Delivery process, issues are tracked based on monthly versions and is directly done in the Production site unless the client is also a Web Development client.	
 
 
 ## Workflow
 
-To properly understand the distinction of where issues would go, see ["Versioning"](#versioning).
-
-Basically, Major versions will be developed on the Sprint board, while Minor versions and Patches will be handled by the Service Kanban.
 
 The Service Kanban will follow the same DevQA process with minor changes to the Release pipeline. 
-
-> **QA Approved**
->
-> `QA IN PROGRESS` -> `RELEASE READY`
-
-When an issue is approved by QA, it is moved to "Release Ready" for assessment of the Project Lead.
-
-- Minor version issues will sit at "Release Ready" to wait for the other issues in the version before so it can undergo UAT.
-
-> **For Internal UAT**
->
-> `RELEASE READY` -> `RELEASED INTERNAL`
-
-> **For Client UAT**
->
-> `RELEASED INTERNAL` -> `RELEASED TO CLIENT`
-
-- Patches will bypass UAT and be immediately pushed to Production.
 
 > **Patch Deployed to Production**
 >
 > `RELEASE READY` -> `RELEASED TO PRODUCTION`
 
-Some issues are also expected to be completed on a target environment and does not need to be pushed further into the release pipeline. These issues can be transitioned to "Closed" after QA Verification.
 
-> **Release Approved**
->
-> `RELEASED INTERNAL` -> `CLOSED`
-
-> **Release Approved**
->
-> `RELEASED TO STAGING` -> `CLOSED`
 
 > **Release Approved**
 >
@@ -400,19 +377,13 @@ Issues are primarily divided into Tasks, Stories, and Bugs
 
 ***Tasks*** 
 
-Issues that can affect user experience but does not directly pertain to user behaviour.
+Issues that does not require client or user acceptance.
 
-Tasks are further differentiated as Technical Task, Content Task, and Maintenance Task.
+Example:
 
-- *Technical Tasks* - issues that need no internal testing, as it is a requirement for other issues.
+- *Technical Tasks* - issues that need no testing, as it is a requirement for other issues.
 
-   Ex. Setup site skeleton, create new admin user
-
-- *Content Tasks* - issues that affect user experience.
-
-   These are defined and tested via **UX Criteria**. 
-
-   Ex. Reduce font size, change menu color, delete section
+   Ex. Setup site skeleton, create new admin user, delete unused content
 
 - *Maintenance Tasks* - issues for the website maintenance service.
 
@@ -424,21 +395,20 @@ Tasks are further differentiated as Technical Task, Content Task, and Maintenanc
 
 ***Stories***
 
-Issues that pertain to specific user behavior and its results.
+Issues that can be verified by the client or users.
 
 These are defined and tested via **Acceptance Criteria**.
 
-Ex. As a user I want to add an item to cart So I can include it in my checkout.
-
-- able to view option to add to cart
-- redirected to cart page on click
-- able to see item in cart page and list
+Ex. User able to add an item to cart
+	- able to view option to add to cart
+	- redirected to cart page on click
+	- able to see item in cart page and list
 
 ***Bugs***
 
-Bugs are issues that are found in Production. They are either tasks or stories.
+Bugs are issues that are found in Production.
 
-These are tested using either UX Criteria or Acceptance Criteria or both, whichever is applicable.
+These are tested based on Reported issue or its Acceptance Criteria, whichever is applicable.
 
 Ex. Fix product add to cart button not showing in mobile
 
@@ -451,9 +421,14 @@ From [**Semantic Versioning 2.0.0**](https://semver.org)
 
 Given a version number MAJOR.MINOR.PATCH, increment the:
 
-1. MAJOR version when you make incompatible API changes,
-2. MINOR version when you add functionality in a backwards-compatible manner, and
+1. MAJOR version when you make incompatible API changes.
+- Ex. First release, major design or function overhaul
+
+2. MINOR version when you add functionality in a backwards-compatible manner.
+- Ex. chunk of small changes that should be released regularly 
+
 3. PATCH version when you make backwards-compatible bug fixes.
+- Ex. fixes that are prioritized in Staging and emergency deployed to Prod
 
 Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
 
